@@ -12,12 +12,13 @@ terraform {
     }
   }
 
-  cloud {
-    organization = "acme-terraform-2026"
+ cloud {
+  organization = "acme-terraform-2026"
 
-    workspaces {
-  tags = ["acme-ecom-demo"]
+  workspaces {
+    tags = ["acme-ecom-demo"]
   }
+}
   }
 }
 
