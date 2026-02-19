@@ -13,10 +13,10 @@ terraform {
   }
 
   cloud {
-    organization = "acme-corp-demo"
+    organization = "acme-terraform-2026"
 
     workspaces {
-      name = "acme-ecommerce-infra"
+      name = "acme-terraform-demo"
     }
   }
 }
