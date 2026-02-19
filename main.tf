@@ -16,8 +16,8 @@ terraform {
     organization = "acme-terraform-2026"
 
     workspaces {
-      name = "acme-terraform-demo"
-    }
+  tags = ["acme-ecom-demo"]
+  }
   }
 }
 
