@@ -38,7 +38,7 @@ resource "aws_s3_bucket" "acme_assets" {
     Environment = var.environment
     ManagedBy   = "Terraform Cloud"
     Project     = "ACME E-Commerce Platform"
-    CostCenter = "ecommerce-platform"
+   // CostCenter = "ecommerce-platform"//
   }
 }
 
