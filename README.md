@@ -18,7 +18,7 @@ You'll need a Terraform Cloud account (free at app.terraform.io) and an AWS acco
 
 1. Create a workspace in Terraform Cloud and connect it to this repo
 2. Add your AWS credentials as environment variables in the workspace (`AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` — mark the secret as sensitive)
-3. Update the `organization` name in the `cloud {}` block in `main.tf` to match your org
+
 4. Push a change to trigger a plan, review the output, then apply
 
 ## Why Terraform Cloud vs just running terraform locally
