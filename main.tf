@@ -60,7 +60,7 @@ resource "aws_s3_bucket_versioning" "acme_assets" {
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "demo_encryption" {
-  bucket = aws_s3_bucket.demo_bucket.id
+  bucket = aws_s3_bucket.acme_assets.id
 
   rule {
     apply_server_side_encryption_by_default {
