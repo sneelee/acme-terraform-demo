@@ -21,6 +21,3 @@ You'll need a Terraform Cloud account (free at app.terraform.io) and an AWS acco
 
 4. Push a change to trigger a plan, review the output, then apply
 
-## Why Terraform Cloud vs just running terraform locally
-
-Running terraform locally works fine for one person. It breaks down when multiple engineers are touching the same infrastructure — state conflicts, no audit trail, credentials on laptops. Terraform Cloud handles state locking, run history, and team permissions out of the box.
