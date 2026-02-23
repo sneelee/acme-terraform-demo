@@ -58,3 +58,13 @@ resource "aws_s3_bucket_versioning" "acme_assets" {
     status = "Enabled"
   }
 }
+
+resource "aws_s3_bucket_server_side_encryption_configuration" "demo_encryption" {
+  bucket = aws_s3_bucket.demo_bucket.id
+
+  rule {
+    apply_server_side_encryption_by_default {
+      sse_algorithm = "AES256"
+    }
+  }
+}
